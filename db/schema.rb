@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20180122185952) do
     t.datetime "updated_at",                          null: false
     t.integer  "plan_id"
     t.string   "stripe_customer_token"
-    t.string   "stripe_costumer_token"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
