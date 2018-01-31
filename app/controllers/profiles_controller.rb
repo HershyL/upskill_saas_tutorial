@@ -1,7 +1,8 @@
 class ProfilesController < ApplicationController
   
-  # # GET to /users/:user_id/profile/new
+  # GET to /users/:user_id/profile/new
   def new
-    # render blank profile form
+    # Render blank profile details form
+    @profile = Profile.new
   end
 end
